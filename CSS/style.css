@@ -1,0 +1,898 @@
+/*//////////////////GLOBAL/////////////*/
+
+* {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+    background-image: url(../IMG/bg3.png);
+
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif ;
+
+    width: 100%;
+
+    position: relative;
+ 
+
+}
+
+
+.container {
+
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: rgb(0, 0, 0) 0px 0px 100px;
+    
+}
+
+main, footer {
+
+    color: rgb(37, 37, 37);
+    background-color: white;
+    
+}
+
+.toTop{
+
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 15%;
+    font-size: 2rem;
+    color: aqua;
+
+    filter: drop-shadow(5px 5px 5px black);
+
+}
+
+.toTop:active{
+
+    transform: scale(0.8);
+
+}
+
+/*///////////////////////////////HEADER///////////////////////////////*/
+
+header{
+
+    background-image: url(../IMG/grey-texture-15885.jpg);
+    background-size: cover;
+    box-shadow: black 5px 0 20px;
+
+}
+
+nav {
+
+    background-color: rgb(0, 225, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    box-shadow: black 5px 0 20px;
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+nav img {
+
+    align-self: center;
+    width: 90px;
+    margin: 0 20px ;
+
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+nav ul li {
+
+    margin: 0 10px;
+    list-style: none;
+    text-align: center;
+    
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    transition: all 0.3s;
+
+}
+
+nav ul li a:hover {
+
+   border-bottom: white solid 2px;
+
+}
+
+.search {
+
+    color: rgb(56, 56, 56);
+    text-indent: 10px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.header-container {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 50px 0px 50px ;
+    
+}
+
+.logo-paf {
+
+    display: block;
+    width: 115px;
+
+}
+
+h1 {
+
+    font-size: 3em;
+
+}
+
+.cta {
+
+    display: block;
+    text-align: center;
+    width: 40%;
+
+    background-color: rgb(0, 225, 255);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    transition: all 0.3s;
+
+}
+
+.cta:hover {
+
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 5px rgb(75, 75, 75));
+
+}
+
+.cta:active {
+
+    transform: scale(1.0);
+    box-shadow: rgb(31, 31, 31) 0px 0px 15px;
+
+}
+
+header p {
+
+    line-height: 1.2em;
+
+}
+
+.signature {
+
+    display: block;
+    margin: 20px 10px;
+    width: 115px;
+
+}
+
+.portrait-olivier {
+
+    width: 420px;
+    
+
+}
+
+
+
+/*////////////////////////////MAIN////////////////////////////////////*/
+
+main {
+
+    padding: 0px 0px 50px;
+
+}
+
+
+.main-title {
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 50px
+
+}
+
+h2 span {
+
+    color: rgb(0, 225, 255);
+
+}
+
+.flex-container {
+
+    display: flex;
+    align-items: center;
+    
+    padding: 20px 50px;
+
+
+}
+
+.hidden-article{
+
+    padding: 2rem 10rem;
+    transition: all;
+    display: none; 
+    
+
+}
+
+article {
+
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+
+}
+
+article img {
+    
+    width: 150px;
+    margin: auto;
+    
+
+    transition: all 0.3s;
+
+}
+
+article img:hover {
+
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 5px rgb(75, 75, 75));
+
+}
+
+.cta-main {
+
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+
+    background-color: rgb(0, 225, 255);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    transition: all 0.3s;
+
+    cursor: pointer;
+
+}
+
+.cta-grey {
+
+    background-color: rgb(56, 56, 56);
+
+}
+
+.cta-main:hover {
+
+    transform: scale(1.1);
+    filter: drop-shadow(0px 5px 5px rgb(75, 75, 75));
+
+}
+
+.cta-main:active {
+
+    transform: scale(1.0);
+    box-shadow: rgb(70, 70, 70) 0px 0px 15px;
+
+}
+
+.divider {
+
+    width: 40%;
+    height: 2px;
+    background-color: grey;
+    border-bottom: 2px solid rgb(59, 59, 59);
+    margin: 100px auto 40px;
+
+}
+
+.articles {
+
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.flex-container-article {
+
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+
+}
+
+h2 , h2 span {
+
+    transition: all 0.3s ease-in-out;
+    
+}
+
+h2 {
+
+    font-size: 3em;
+
+}
+
+
+h2:hover {
+
+    color: rgb(0, 225, 255);
+    
+
+}
+
+h2:hover > span {
+
+    color: black;
+
+}
+
+.main-article h3 span {
+
+    color: rgb(0, 225, 255);
+
+}
+
+.main-article , aside {
+
+    border-radius:  5px;
+
+}
+
+.main-article {
+
+    background-color: rgb(224, 235, 240);
+    width: 60%;
+    
+    text-align: left;
+
+}
+
+.flip-card {
+
+    background-color: transparent;
+
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+
+.rotate{
+
+    transform: rotateY(180deg);
+
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+
+    width: 60%;
+    
+    text-align: left;
+    padding: 40px;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+
+    background-color: rgb(224, 235, 240);
+    color: black;
+
+}
+
+/* Style the back side */
+.flip-card-back {
+
+    background-color: rgb(0, 225, 255);
+    color: white;
+    transform: rotateY(180deg);
+
+}
+
+    
+
+.olivier-p {
+
+    float: left;
+    margin-right: 20px;
+
+}
+
+aside {
+
+    width: 30%;
+    background-color: rgb(224, 235, 240);
+    padding: 0 20px;
+    text-align: justify;
+    font-size: 0.7em;
+
+}
+
+.post:nth-child(even){
+
+    text-align: right;
+
+}
+
+/*////////////////////////////////////////  FORM  ////////////////////////////////////////////////////*/
+
+.form-container {
+
+    width: 60%;
+    margin: 50px auto 0;
+
+    
+
+}
+
+#sign {
+
+
+    height: 200px;
+    width: 100%;
+    background-color: rgb(224, 235, 240);
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#sign input{
+
+    border-style: none;
+    border-radius: 5px;
+    
+
+    margin: 0.5rem;
+}
+
+#sign .email{
+
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(85, 85, 85);
+    font-size: large;
+    text-align: center;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
+
+    
+   
+
+}
+
+.email input{
+
+    text-indent: 1rem;
+    width: 100%;
+    height: 2rem;
+    
+
+    
+
+}
+
+.email label{
+
+    margin: 1rem;
+  
+
+}
+
+.email input:focus{
+
+    outline-color: rgb(87, 207, 87);
+
+}
+
+#sign .sub-button{
+
+    width: 150px;
+    margin: 0 auto;
+
+}
+
+.sub-button button{
+
+    background-color: grey;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+
+    font-size: 1.1rem;
+    transition: all 0.2s ;
+
+
+    width: 120px;
+    height: 40px;
+    margin: 1rem;
+
+   
+
+}
+
+.sub-button button:hover{
+
+    transform: scale(1.5);
+    filter: drop-shadow(0px 5px 5px rgb(75, 75, 75));
+
+}
+
+.sub-button button:active{
+
+    transform: scale(1.2);
+    filter: drop-shadow(0px 5px 5px rgb(75, 75, 75));
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50px;
+
+    background-color: rgb(87, 207, 87);
+
+    
+}
+
+.sub-button button::after{
+    content: 'Send';
+}
+
+.sub-button button:active::after{
+    content: '✔';
+}
+
+
+/*/////////////////////////////////////////////// FOOTER //////////////////////////////////////////////*/
+
+footer {
+
+    background-image: url(../IMG/grey-texture-15885.jpg);
+    background-position: bottom left;
+    color: rgba(255, 255, 255, 0.582);
+
+}
+
+.footer-container {
+
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 10px;
+
+    border-top: 2px solid grey;
+
+}
+
+.footerlogo {
+
+    width: 116px;
+    height: 116px;
+
+}
+
+
+
+/*//////////////////////////////////////TABLET VERSION///////////////////////////////////*/
+
+@media screen and (max-width: 768px) { 
+
+    .container {
+
+        width: 100%;
+
+        font-size: 0.8rem;
+        
+    }
+
+    header nav ul {
+
+        display: none;
+
+    }
+
+    .portrait-olivier {
+
+        display: none;
+
+    }
+
+    .logo-paf {
+
+        width: 300px;
+
+    }
+
+    nav {
+
+        height : 100px;
+
+    }
+
+    .burger-menu {
+
+        display: block;
+
+        height: 0;
+        width: 0;
+       
+        position: absolute;
+        top: 0;
+        left: 0%;
+
+        background-color: rgb(0, 225, 255);
+
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+
+        opacity: 0;
+
+        transition: all 1s ease-in-out;
+    }
+
+    .close-burger {
+
+        position: absolute;
+
+        top: 2%;
+        right: 3%;
+
+    }
+
+    .close-burger .fas{
+
+        font-size: 4em;
+        color: white;
+
+    }
+
+    .slide-in {
+
+        height: 100vh;
+        width: 100vw;
+
+        opacity: 1;
+
+    }
+
+    .burger-ul{
+
+        display: block;
+        font-size: 3em;
+        
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    .burger-menu .burger-ul li{
+
+        margin: 20px;
+
+    }
+
+    .search{
+        width: 100%;
+        font-size: 1em;
+
+    }
+
+    .burger {
+
+        display: block;
+        font-size: 3em;
+        margin-right: 20px;
+
+    }
+
+    .header-container {
+
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 50px;
+
+    }
+
+    .logo-paf , .cta {
+
+        margin: 0 auto;
+
+    }
+
+    .signature {
+        width: 20%;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    
+
+    /*/////////////////MAIN///////////////////*/
+
+    main {
+
+        font-size:  2.5em;
+
+    }
+
+    .flex-container {
+
+        flex-direction: column;
+
+    }
+
+    article img {
+
+        width: 30%;
+
+    }
+
+    .cta-main {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10px;
+
+        width: 500px;
+        height: 100px;
+
+    }
+
+    .flex-container-article {
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .olivier-p {
+
+        width: 45%;
+
+    }
+
+    .main-article , aside {
+
+        width: 90%;
+
+    }
+
+
+
+}
+
+/*//////////////////////////////////////MOBILE VERSION///////////////////////////////////*/
+
+@media screen and (max-width: 500px) {
+    
+    .logo-paf{
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+
+    .cta {
+
+        width: 70%;
+
+    }
+
+    .signature{
+        width: 60%;
+    }
+
+    .cta-main{
+
+        width: 80%;
+        height: 50px;
+
+        border-radius: 10px;
+        font-size: 1.5rem;
+    }
+
+    article img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-article{
+        text-align: center;
+    }
+
+    .olivier-p {
+
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .footer-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+}
